@@ -57,6 +57,7 @@ public class AppTest
             mb.constructSearchers(model, 1, new SimpleNodeConstructor());
             Tagger tagger = new Tagger().setModel(model);
             Tagger.ViterbiResult vr = tagger.viterbi(test);
+            tagger.tagg(test);
             assertTrue(vr.distances.size() == 4);
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,8 +1,8 @@
 package com.generall.app.sknn;
 
 import weka.core.EuclideanDistance;
+import weka.core.neighboursearch.LinearNNSearch;
 import weka.core.neighboursearch.NearestNeighbourSearch;
-import weka.core.neighboursearch.VPTree;
 
 /**
  * Example of simple node constructor with Euclidean Disatance and VP-Tree searcher
@@ -12,7 +12,7 @@ public class SimpleNodeConstructor implements NodeConstructor {
 
     public void InitSearcher(SearchDataIndex dataIndex, Node node, Model model) throws Exception {
         EuclideanDistance df = new EuclideanDistance();
-        NearestNeighbourSearch nns = new VPTree();
+        NearestNeighbourSearch nns = new LinearNNSearch();
 
         df.setDontNormalize(true);
         // node.dataset; - to normalize across all instances (true way)
