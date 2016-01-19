@@ -1,0 +1,17 @@
+@relation test_seq
+
+@attribute sequence_id {seq1, seq2, seq3}
+@attribute val_1 numeric
+
+@attribute class {0,1,2}
+
+@data
+seq1, 1, 0
+seq1, 2, 0
+seq1, 3, 0
+seq2, 2, 1
+seq2, 5, 1
+seq2, 6, 1
+seq3, 1, 2
+seq3, 1, 2
+seq3, 1, 2

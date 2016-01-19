@@ -1,0 +1,11 @@
+@relation test_seq
+
+@attribute sequence_id {seq1, seq2, seq3}
+@attribute val_1 numeric
+
+@attribute class {0,1,2}
+
+@data
+seq1, 1, ?
+seq1, 1, ?
+seq1, 6, ?
